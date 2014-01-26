@@ -16,7 +16,7 @@ public class SampleMethods
   public static int
     c2f (int temp)
   {
-    return (temp - 32) * (5 / 9);
+    return ((temp * 9) / 5) + 32;
   } // c2f(int)
 
   /**
@@ -161,7 +161,7 @@ public class SampleMethods
 
     for (int i = 0; i < ints.length; i++)
       {
-        result += result + i;
+        result += ints[i];
       } // for
     return result;
   } // result(int[])
